@@ -2,8 +2,4 @@ streamlit
 langchain
 langchain_community
 openai
-llm = OpenAI(openai_api_key=st.secrets["MyOpenAIKey"]) 
-streamlit==1.10.0
-langchain==0.0.1
-langchain_community==0.0.1
-os.getenv("OPENAI_API_KEY")
+
