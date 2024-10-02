@@ -1,7 +1,4 @@
-deimport streamlit as st
-!pip install streamlit 
-!pip install langchain
-!pip install langchain_community
+import streamlit as st
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 !streamlit run app.py
 from openai import OpenAI
