@@ -3,3 +3,4 @@ langchain
 langchain_community
 openai
 openai.api_key = st.secrets["MyOpenAIKey"
+llm = OpenAI(openai_api_key=st.secrets["MyOpenAIKey"]) 
