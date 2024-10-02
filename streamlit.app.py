@@ -1,7 +1,6 @@
 import streamlit as st
 from langchain.chains import RoutingChain
 from langchain_community import detect_sentiment
-!pip install streamlit langchain langchain_community
 import openai
 
 
