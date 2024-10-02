@@ -1,8 +1,18 @@
 import streamlit as st
-from langchain.chains import RoutingChain
-from langchain_community import detect_sentiment
+!pip install streamlit 
+!pip install langchain
+!pip install langchain_community
+from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
+!streamlit run app.py
 from openai import OpenAI
 import os
+os.environ["OPENAI_API_KEY"] = st.secrets["MyOpenAIkey"]
+
+# Define the user input
+st.title("Share with us your experience of the latest trip.")
+user_input = st.text_area("")
+
+!streamlit run app.py
 # Function to handle user input
 def handle_input(user_input):
     sentiment = detect_sentiment(user_input)
@@ -19,4 +29,3 @@ st.title("Airline Experience Feedback")
 user_input = st.text_area("Share with us your experience of the latest trip.")
 if st.button("Submit"):
     handle_input(user_input)
-
