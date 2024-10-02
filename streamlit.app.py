@@ -1,7 +1,8 @@
 import streamlit as st
 from langchain.chains import RoutingChain
 from langchain_community import detect_sentiment
-
+!pip install streamlit langchain langchain_community
+import openai
 # Function to handle user input
 def handle_input(user_input):
     sentiment = detect_sentiment(user_input)
