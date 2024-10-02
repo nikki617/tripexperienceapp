@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from openai import OpenAI
 import os
-openai_api_key = st.secrets[MyOpenAIKey]
+openai_api_key = st.secrets["MyOpenAIKey"]
 # Define the user input
 st.header("Share with us your experience of the latest trip.")
 user_input = st.text_area("")
