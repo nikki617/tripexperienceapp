@@ -11,7 +11,7 @@ import streamlit as st
 !pip install langchain_community
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 !streamlit run app.py
-
+os.environ["OPENAI_API_KEY"] = st.secrets["MyOpenAIkey"]
 key = "MyOpenAIKey"
 
 # Define the user input
