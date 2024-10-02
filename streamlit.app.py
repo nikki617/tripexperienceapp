@@ -1,4 +1,4 @@
-import streamlit as st
+deimport streamlit as st
 !pip install streamlit 
 !pip install langchain
 !pip install langchain_community
@@ -9,7 +9,7 @@ import os
 os.environ["OPENAI_API_KEY"] = st.secrets["MyOpenAIkey"]
 
 # Define the user input
-st.title("Share with us your experience of the latest trip.")
+st.header("Share with us your experience of the latest trip.")
 user_input = st.text_area("")
 
 !streamlit run app.py
