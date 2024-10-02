@@ -1,6 +1,5 @@
 import streamlit as st
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
-!streamlit run app.py
 from openai import OpenAI
 import os
 os.environ["OPENAI_API_KEY"] = st.secrets["MyOpenAIkey"]
@@ -9,7 +8,6 @@ os.environ["OPENAI_API_KEY"] = st.secrets["MyOpenAIkey"]
 st.header("Share with us your experience of the latest trip.")
 user_input = st.text_area("")
 
-!streamlit run app.py
 # Function to handle user input
 def handle_input(user_input):
     sentiment = detect_sentiment(user_input)
